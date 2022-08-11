@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="score">
+        <div class="span">
+            <span id="fouls">Fouls</span>
+            <span id="start">00</span>
+           
+        </div>
+    <div class="container">
+        <div class="home-container">
+            <h1 id="home" style="border-radius: 5px;">Home</h1>
+            <p class="home">0</p>
+            <div class="home-btn">
+                <button class="score-btn homebtn1" >+1</button>
+                <button class="score-btn homebtn2" >+2</button>
+                <button class="score-btn homebtn3" >+3</button>
+            </div>
+        </div>
+        <div> <button id="hidden"></button></div>
+        <div class="guest-container">
+            <h1 id="guest" style="border-radius: 5px;">Guest</h1>
+            <p class="guest">0</p>
+            <div class="guest-btn">
+                <button class="score-btn guestbtn1" >+1</button>
+                <button class="score-btn guestbtn2" >+2</button>
+                <button class="score-btn guestbtn3" >+3</button>
+            </div>
+        </div>
+    </div>
+    <!-- STOPWATCH HTML -->
+    <div class="container2">
+        <div>
+            <span id="timer">00:00:00</span>
+        </div>
+        <div class="controls">
+            <span class="start btns">start</span>
+            <span class="reset btns">New Game</span>
+            <span class="stop btns">stop</span>
+           
+        </div>
+    </div>
+</section>
+
+  <script src="index.js"></script>
+</body>
+</html>
+        

@@ -105,7 +105,7 @@ body{
     font-size: 4rem;
     color: #fff;
     font-weight: lighter;
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 /* For smaller screen */
@@ -153,7 +153,7 @@ body{
 .container2{
     display: grid;
     place-content: center;
-    margin-top: -520px;
+    margin-top: -600px;
     margin-left: -25px;
 }      
     
@@ -173,7 +173,7 @@ body{
 } 
 #timer{
     font-size: 45px;
-    margin-left: 90px;
+    margin-left: 95px;
 }
 #hidden{
     background-color: inherit;

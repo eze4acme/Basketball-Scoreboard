@@ -8,48 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="score">
-        <div class="span">
-            <span id="fouls">Fouls</span>
-            <span id="start">00</span>
-           
-        </div>
-    <div class="container">
-        <div class="home-container">
-            <h1 id="home" style="border-radius: 5px;">Home</h1>
-            <p class="home">0</p>
-            <div class="home-btn">
-                <button class="score-btn homebtn1" >+1</button>
-                <button class="score-btn homebtn2" >+2</button>
-                <button class="score-btn homebtn3" >+3</button>
+    <main>
+        <div class="main-container">
+          <div class="point-section" style="background-color: blue">
+            <div class="circle" id="home-point">100</div>
+            <h2>Points</h2>
+            <div class="circle" id="guest-point">100</div>
+          </div>
+          <div class="score-section" style="background-color: yellow">
+            <div class="home-section">
+              <h1 id="home">home</h1>
+              <div class="home-board">0</div>
+              <div class="btn-circle"><p class="player1-btn button"></p></div>
+              <h2>Player 1</h2>
             </div>
-        </div>
-        <div> <button id="hidden"></button></div>
-        <div class="guest-container">
-            <h1 id="guest" style="border-radius: 5px;">Guest</h1>
-            <p class="guest">0</p>
-            <div class="guest-btn">
-                <button class="score-btn guestbtn1" >+1</button>
-                <button class="score-btn guestbtn2" >+2</button>
-                <button class="score-btn guestbtn3" >+3</button>
+            <div class="period-section">
+              <h2>time:</h2>
+              <h1 class="period">01:00</h1>
             </div>
+            <div class="guest-section">
+              <h1 id="guest">guest</h1>
+              <div class="guest-board">0</div>
+              <div class="btn-circle"><p class="player2-btn button"></p></div>
+              <h2>Player 2</h2>
+            </div>
+          </div>
+          <h2
+            class="new-game-section"
+            id="new-game">
+            new game
+          </h2>
+          <!-- modal section -->
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 id="winner-text"></h3>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- STOPWATCH HTML -->
-    <div class="container2">
-        <div>
-            <span id="timer">00:00:00</span>
-        </div>
-        <div class="controls">
-            <span class="start btns">start</span>
-            <span class="reset btns">New Game</span>
-            <span class="stop btns">stop</span>
-           
-        </div>
-    </div>
-</section>
-
-  <script src="index.js"></script>
+      </main>
+      <script src="index.js"></script>
 </body>
 </html>
         
